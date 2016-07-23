@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87919E51-6880-4730-A586-CF17FFCAC60D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AccountingTransactionService</RootNamespace>
+    <AssemblyName>AccountingTransactionService.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="Utilities, Version=1.0.5323.22588, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Pro.NET.Utilities.1.0.5323.22588\lib\net40-Client\Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountProvider.cs" />
+    <Compile Include="CustomExceptions\AccountTransactionException.cs" />
+    <Compile Include="CustomExceptions\RecipientAttributesException.cs" />
+    <Compile Include="CustomExceptions\SubdealerAttributesException.cs" />
+    <Compile Include="CustomExceptions\PymentNotExistException.cs" />
+    <Compile Include="CustomExceptions\PaymentStatisticsSaveToAbsException.cs" />
+    <Compile Include="CustomExceptions\AccountingTransactionsSaveToAbsException.cs" />
+    <Compile Include="CustomExceptions\AccountingTransactionsSaveToFsException.cs" />
+    <Compile Include="CustomExceptions\AccountingTransactionsReadException.cs" />
+    <Compile Include="CustomExceptions\PaymentStatisticsPeriodReadException.cs" />
+    <Compile Include="CustomExceptions\PaymentStatisticsEventSaveException.cs" />
+    <Compile Include="CustomExceptions\PaymentStatisticsEventReadException.cs" />
+    <Compile Include="CustomExceptions\TerminalCollectionException.cs" />
+    <Compile Include="CustomExceptions\AccountingTransactionEventPeriodReadException.cs" />
+    <Compile Include="CustomExceptions\AccountingTransactionEventSaveException.cs" />
+    <Compile Include="CustomExceptions\AccountingTransactionEventReadException.cs" />
+    <Compile Include="CustomExceptions\AccountingTransactionEventStatusUpdateException.cs" />
+    <Compile Include="CustomExceptions\PaymentStatisticsEventStatusUpdateException.cs" />
+    <Compile Include="CustomExceptions\PaymentException.cs" />
+    <Compile Include="DbEntities\AccountingTransactionEvent.cs" />
+    <Compile Include="DbEntities\AccountingTransactionEventCollection.cs" />
+    <Compile Include="DbEntities\PaymentStatisticsEventCollection.cs" />
+    <Compile Include="DbEntities\PaymentStatisticsEvent.cs" />
+    <Compile Include="DbEntities\EventPeriod.cs" />
+    <Compile Include="DbEntities\AccountingTransactionTemplateDetailCollection.cs" />
+    <Compile Include="DbEntities\AccountSearchRule.cs" />
+    <Compile Include="DbEntities\AccountSearchRuleCollection.cs" />
+    <Compile Include="DbEntities\AccountBinding.cs" />
+    <Compile Include="DbEntities\AccountBindingCollection.cs" />
+    <Compile Include="DbEntities\AccountingTransactionPaymentCollection.cs" />
+    <Compile Include="DbEntities\AccountingTransaction.cs" />
+    <Compile Include="DbEntities\AccountingTransactionCollection.cs" />
+    <Compile Include="DbEntities\ReplacementAccountCollection.cs" />
+    <Compile Include="DbEntities\AccountingTransactionPayment.cs" />
+    <Compile Include="DbEntities\InlineAccount.cs" />
+    <Compile Include="DbEntities\ReplacementAccount.cs" />
+    <Compile Include="DbEntities\PaymentStatisticsCollection.cs" />
+    <Compile Include="DbEntities\Payment.cs" />
+    <Compile Include="DbEntities\PaymentCollection.cs" />
+    <Compile Include="DbEntities\AccountingTransactionTemplateDetail.cs" />
+    <Compile Include="DbEntities\TerminalCollection.cs" />
+    <Compile Include="DbEntities\PaymentStatistics.cs" />
+    <Compile Include="Entities\PaymentAccountingTransactionHelper.cs" />
+    <Compile Include="Entities\AccountingTransactionDetail.cs" />
+    <Compile Include="Entities\AccountingTransactionDetailCollection.cs" />
+    <Compile Include="Entities\AccountFilter.cs" />
+    <Compile Include="Entities\Account.cs" />
+    <Compile Include="Entities\AccountingTransactionDescriptionParameters.cs" />
+    <Compile Include="Entities\AccountingTransactionFields.cs" />
+    <Compile Include="Enums\EventStatus.cs" />
+    <Compile Include="Enums\AccountingTransactionVariable.cs" />
+    <Compile Include="Enums\BankRequisites.cs" />
+    <Compile Include="Enums\PlacePayment.cs" />
+    <Compile Include="Enums\OtpOperationType.cs" />
+    <Compile Include="Enums\RecipientRequisites.cs" />
+    <Compile Include="Enums\PaymentVariable.cs" />
+    <Compile Include="Enums\EventType.cs" />
+    <Compile Include="Enums\EntityType.cs" />
+    <Compile Include="Enums\AmountType.cs" />
+    <Compile Include="Enums\DocumentType.cs" />
+    <Compile Include="Enums\AccountPosition.cs" />
+    <Compile Include="Interfaces\IAccountSearch.cs" />
+    <Compile Include="Interfaces\IDbProvider.cs" />
+    <Compile Include="DocumnetNumber.cs" />
+    <Compile Include="PaymentAttributesProvider.cs" />
+    <Compile Include="Service References\RequisitesResolverService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IGatewayProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AccountingTransactionProvider.cs" />
+    <Compile Include="XmlEntities\OrganizationPayer.cs" />
+    <Compile Include="XmlEntities\Tax.cs" />
+    <Compile Include="XmlEntities\PaymentPurpose.cs" />
+    <Compile Include="XmlEntities\Organization.cs" />
+    <Compile Include="XmlEntities\Bank.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Service References\RequisitesResolverService\AccountingTransactionService.RequisitesResolverService.OperatorRequisite.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RequisitesResolverService\OperatorRequisitesResolverService.wsdl" />
+    <None Include="Service References\RequisitesResolverService\OperatorRequisitesResolverService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RequisitesResolverService\OperatorRequisitesResolverService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RequisitesResolverService\OperatorRequisitesResolverService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\RequisitesResolverService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RequisitesResolverService\OperatorRequisitesResolverService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RequisitesResolverService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RequisitesResolverService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RequisitesResolverService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccountingTransactionService.Configuration\AccountingTransactionService.Configuration.csproj">
+      <Project>{1fcbad85-e582-4e3a-b108-09b2eac4f4ee}</Project>
+      <Name>AccountingTransactionService.Configuration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

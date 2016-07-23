@@ -1,0 +1,9 @@
+C:\src\PH\ATS\ATV.Utils\bin\Debug\ATV.Utils.dll
+C:\src\PH\ATS\ATV.Utils\bin\Debug\ATV.Utils.pdb
+C:\src\PH\ATS\ATV.Utils\obj\Debug\ResolveAssemblyReference.cache
+C:\src\PH\ATS\ATV.Utils\obj\Debug\ATV.Utils.dll
+C:\src\PH\ATS\ATV.Utils\obj\Debug\ATV.Utils.pdb
+D:\TMP\ATS.src\ATS.src\ATS\ATV.Utils\bin\Debug\ATV.Utils.dll
+D:\TMP\ATS.src\ATS.src\ATS\ATV.Utils\bin\Debug\ATV.Utils.pdb
+D:\TMP\ATS.src\ATS.src\ATS\ATV.Utils\obj\Debug\ATV.Utils.dll
+D:\TMP\ATS.src\ATS.src\ATS\ATV.Utils\obj\Debug\ATV.Utils.pdb

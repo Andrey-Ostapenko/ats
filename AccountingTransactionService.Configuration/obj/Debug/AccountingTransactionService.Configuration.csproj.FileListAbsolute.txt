@@ -1,0 +1,9 @@
+C:\src\PH\ATS\AccountingTransactionService.Configuration\bin\Debug\AccountingTransactionService.Configuration.dll
+C:\src\PH\ATS\AccountingTransactionService.Configuration\bin\Debug\AccountingTransactionService.Configuration.pdb
+C:\src\PH\ATS\AccountingTransactionService.Configuration\obj\Debug\ResolveAssemblyReference.cache
+C:\src\PH\ATS\AccountingTransactionService.Configuration\obj\Debug\AccountingTransactionService.Configuration.dll
+C:\src\PH\ATS\AccountingTransactionService.Configuration\obj\Debug\AccountingTransactionService.Configuration.pdb
+D:\TMP\ATS.src\ATS.src\ATS\AccountingTransactionService.Configuration\bin\Debug\AccountingTransactionService.Configuration.dll
+D:\TMP\ATS.src\ATS.src\ATS\AccountingTransactionService.Configuration\bin\Debug\AccountingTransactionService.Configuration.pdb
+D:\TMP\ATS.src\ATS.src\ATS\AccountingTransactionService.Configuration\obj\Debug\AccountingTransactionService.Configuration.dll
+D:\TMP\ATS.src\ATS.src\ATS\AccountingTransactionService.Configuration\obj\Debug\AccountingTransactionService.Configuration.pdb
